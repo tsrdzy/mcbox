@@ -39,14 +39,32 @@
     </div>
     <div class="mainset_card">
       <h2>打开方式:</h2>
-      <div style="display: flex; justify-content: space-between;width:100%">
+      <div style="display: flex; justify-content: space-between; width: 100%">
         <n-space>
-          <div style="line-height: 28px;">左键打开<n-switch size="medium" /></div>
+          <div style="line-height: 28px">
+            左键打开<n-switch
+              style="border: 1px solid rgb(128, 128, 128); border-radius: 16px"
+              size="medium"
+            />
+          </div>
         </n-space>
         <n-space>
-          <div style="line-height: 28px;">右键打开<n-switch size="medium" /></div
+          <div style="line-height: 28px">
+            右键打开<n-switch
+              style="border: 1px solid rgb(128, 128, 128); border-radius: 16px"
+              size="medium"
+            /></div
         ></n-space>
       </div>
+    </div>
+    <hr />
+    <div class="mainset_card">
+      <h2>打开菜单时执行:</h2>
+      <select>
+        <option :key="index" v-for="index of 6" :value="index">
+          {{ index }}行
+        </option>
+      </select>
     </div>
   </div>
 </template>
@@ -58,7 +76,11 @@ export default {
     mcbox_items,
   },
   data() {
-    return {};
+    return {
+      menu_setting: {
+        name: "",
+      },
+    };
   },
   mounted() {},
   methods: {},
@@ -71,9 +93,9 @@ export default {
   .mainset_card {
     position: relative;
     display: flex;
-    margin: 5px 0;
+    margin: 3px 0;
     h2 {
-      min-width: 80px;
+      min-width: 120px;
       border: 1px solid rgba(255, 255, 255, 0);
       height: 24px;
       line-height: 24px;

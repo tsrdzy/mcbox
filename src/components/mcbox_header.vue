@@ -14,7 +14,16 @@
         <template #trigger>
           <div>&#xe617;</div>
         </template>
-        <mcbox_skin></mcbox_skin>
+        <div
+          style="
+            border: 1px solid #fff;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: rgba(125, 125, 125, 0.3);
+          "
+        >
+          <mcbox_skin></mcbox_skin>
+        </div>
       </n-popover>
       <div v-on:click="tomin(id)">&#xe60e;</div>
       <div v-if="!this.main_max" v-on:click="tomax(id)" style="font-size: 16px">
@@ -50,27 +59,24 @@ export default {
     ipcRenderer.on(this.ids + "-max", () => {
       this.main_max = true;
     });
-    ipcRenderer.on(this.ids +"-unmax", () => {
+    ipcRenderer.on(this.ids + "-unmax", () => {
       this.main_max = false;
     });
   },
   methods: {
     tomin() {
-      ipcRenderer.send(this.ids +"-min");
+      ipcRenderer.send(this.ids + "-min");
     },
     tomax() {
-      ipcRenderer.send(this.ids +"-max");
+      ipcRenderer.send(this.ids + "-max");
       this.main_max = true;
     },
     tounmax() {
-      ipcRenderer.send(this.ids +"-unmax");
+      ipcRenderer.send(this.ids + "-unmax");
       this.main_max = false;
     },
     toclose() {
-      ipcRenderer.send(this.ids +"-close");
-    },
-    colorshow(colorshow) {
-      this.$store.commit("colorshow", colorshow);
+      ipcRenderer.send(this.ids + "-close");
     },
   },
 };

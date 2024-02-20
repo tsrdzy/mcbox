@@ -1,7 +1,7 @@
 import {
   createRouter,
   // createWebHistory,
-  createWebHashHistory
+  createWebHashHistory,
 } from "vue-router";
 
 const routes = [
@@ -18,36 +18,34 @@ const routes = [
       {
         path: "editor",
         name: "editor",
-        component: () =>
-          import(
-            /* webpackChunkName: "editor" */ "@/views/main/components/mcbox_editor"
-          ),
+        component: () => import("@/views/main/components/mcbox_editor"),
       },
       {
         path: "resource",
         name: "resource",
-        component: () =>
-          import(
-            /* webpackChunkName: "resource" */ "@/views/main/components/mcbox_resource"
-          ),
+        component: () => import("@/views/main/components/mcbox_resource"),
       },
       {
         path: "about",
         name: "about",
-        component: () =>
-          import(
-            /* webpackChunkName: "about" */ "@/views/main/components/mcbox_about"
-          ),
+        component: () => import("@/views/main/components/mcbox_about"),
+      },
+      {
+        path: "config",
+        name: "config",
+        component: () => import("@/views/main/components/mcbox_config"),
       },
     ],
   },
   {
     path: "/chestcommands",
     name: "chestcommands",
-    component: () =>
-      import(
-        /* webpackChunkName: "about" */ "@/views/chestcommands/mcbox_chestcommands.vue"
-      ),
+    component: () => import("@/views/chestcommands/mcbox_chestcommands.vue"),
+  },
+  {
+    path: "/gskin",
+    name: "gskin",
+    component: () => import("@/views/gskin/mcbox_gskin.vue"),
   },
 ];
 

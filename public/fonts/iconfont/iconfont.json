@@ -6,6 +6,48 @@
   "description": "官网",
   "glyphs": [
     {
+      "icon_id": "2076214",
+      "name": "暂停",
+      "font_class": "zanting1",
+      "unicode": "e87a",
+      "unicode_decimal": 59514
+    },
+    {
+      "icon_id": "14227050",
+      "name": "启动",
+      "font_class": "qidong1",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
+    },
+    {
+      "icon_id": "6469511",
+      "name": "走路",
+      "font_class": "zoulu",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "2869787",
+      "name": "01_stand",
+      "font_class": "_stand",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "6775452",
+      "name": "步行",
+      "font_class": "yiliaohangyedeICON-",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "19541268",
+      "name": "站立",
+      "font_class": "zhanli",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
       "icon_id": "16921549",
       "name": "关于",
       "font_class": "guanyu1",
@@ -102,13 +144,6 @@
       "font_class": "lifangtilitiduomiantifangkuai",
       "unicode": "e7fa",
       "unicode_decimal": 59386
-    },
-    {
-      "icon_id": "5175711",
-      "name": "跑步",
-      "font_class": "paobu",
-      "unicode": "e61d",
-      "unicode_decimal": 58909
     },
     {
       "icon_id": "1413447",

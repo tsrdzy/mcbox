@@ -6,6 +6,9 @@
     <router-link to="/main/resource" active-class="main_nav_active">
       <div class="card"><i class="iconfont">&#xe611;</i> 资源</div>
     </router-link>
+    <router-link to="/main/config" active-class="main_nav_active">
+      <div class="card"><i class="iconfont">&#xe63e;</i> 设置</div>
+    </router-link>
     <router-link to="/main/about" active-class="main_nav_active">
       <div class="card"><i class="iconfont">&#xe7e8;</i> 关于</div>
     </router-link>

@@ -23,6 +23,7 @@ async function createWindow() {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true,
+      webSecurity: false, //路径识别,关闭安全策略
     },
   });
   //判断是否最大化
@@ -67,6 +68,8 @@ async function createWindow() {
   }
   // win.loadURL(process.env.WEBPACK_DEV_SERVER_URL);
 }
+
+//chestcommands
 let chestcommands = false;
 let winChestCommands;
 ipcMain.on("runChestCommands", () => {
@@ -111,6 +114,55 @@ ipcMain.on("runChestCommands", () => {
     console.log(winURL + "#/chestcommands");
   } else {
     winChestCommands.show();
+  }
+});
+
+//gskin
+let gskin = false;
+let wingskin;
+ipcMain.on("rungskin", () => {
+  if (!gskin) {
+    wingskin = new BrowserWindow({
+      width: 900,
+      height: 620,
+      minHeight: 620,
+      minWidth: 900,
+      frame: false,
+      icon: "./public/favicon.ico",
+      title: "MCBOX",
+      webPreferences: {
+        webSecurity: false, //跨域解决
+        nodeIntegration: true,
+        contextIsolation: false,
+        enableRemoteModule: true,
+      },
+    });
+    gskin = true;
+    //判断是否最大化
+    wingskin.on("maximize", () => {
+      wingskin.webContents.send("gskin-max");
+    });
+    wingskin.on("unmaximize", () => {
+      wingskin.webContents.send("gskin-unmax");
+    });
+    //按钮控制区域
+    ipcMain.on("gskin-min", () => {
+      wingskin.minimize();
+    });
+    ipcMain.on("gskin-max", () => {
+      wingskin.maximize();
+    });
+    ipcMain.on("gskin-unmax", () => {
+      wingskin.unmaximize();
+    });
+    ipcMain.on("gskin-close", () => {
+      wingskin.hide();
+    });
+    createProtocol("app");
+    wingskin.loadURL(winURL + "#/gskin");
+    console.log(winURL + "#/gskin");
+  } else {
+    wingskin.show();
   }
 });
 app.on("window-all-closed", () => {

@@ -1,5 +1,5 @@
 <template>
-  <mcbox_header title="MCBOX - ChestCommands" id="chestcommands"></mcbox_header>
+  <mcbox_header title="MCBOX - ChestCommands Editor" id="chestcommands"></mcbox_header>
   <main>
     <mcbox_menus></mcbox_menus>
     <mcbox_mainsetVue></mcbox_mainsetVue>
