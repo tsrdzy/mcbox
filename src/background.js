@@ -75,10 +75,10 @@ let winChestCommands;
 ipcMain.on("runChestCommands", () => {
   if (!chestcommands) {
     winChestCommands = new BrowserWindow({
-      width: 800,
-      height: 550,
-      minHeight: 550,
-      minWidth: 800,
+      width: 1200,
+      height: 750,
+      minHeight: 750,
+      minWidth: 1200,
       frame: false,
       icon: "./public/favicon.ico",
       title: "MCBOX",
@@ -115,6 +115,8 @@ ipcMain.on("runChestCommands", () => {
   } else {
     winChestCommands.show();
   }
+
+  
 });
 
 //gskin

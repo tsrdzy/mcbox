@@ -45,7 +45,7 @@ export default createStore({
             name: "正版皮肤获取器",
             img: require("@/../public/img/main/skin.png"),
             id: "gskin",
-          }
+          },
         ],
       },
       {
@@ -150,8 +150,36 @@ export default createStore({
   actions: {},
   modules: {
     chestcommands: {
-      state: {},
-      mutations: {},
+      namespaced: true,
+      state: {
+        xy: [],
+        "menu-setting": {
+          name: "",
+          row: 1,
+          commands: [],
+          "auto-refresh": null,
+          "open-actions": [],
+          "open-with-item": {
+            material: "",
+            "left-click": false,
+            "right-click": false,
+          },
+        },
+        items: {},
+      },
+      mutations: {
+        menuset(state, menuset) {
+          console.log(menuset);
+          state["menu-setting"] = menuset;
+        },
+        itemsset(state, items) {
+          state.items = items;
+          console.log(state.items);
+        },
+        xy(state, xy) {
+          state.xy = xy;
+        },
+      },
     },
   },
 });

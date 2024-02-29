@@ -1,0 +1,57 @@
+[
+    {
+        "name": "以玩家权限执行指令",
+        "message": "请输入指令",
+        "action": ""
+    },
+    {
+        "name": "以控制台权限执行指令",
+        "message": "请输入指令",
+        "action": "console: "
+    },
+    {
+        "name": "以OP权限执行指令",
+        "message": "请输入指令",
+        "action": "op: "
+    },
+    {
+        "name": "打开另一个菜单",
+        "message": "菜单名称(需要玩家拥有菜单权限)",
+        "action": "open: "
+    },
+    {
+        "name": "向玩家发送消息",
+        "message": "请输入消息",
+        "action": "tell: "
+    },
+    {
+        "name": "向所有玩家发送消息",
+        "message": "请输入消息",
+        "action": "broadcast: "
+    },
+    {
+        "name": "播放音效",
+        "message": "格式1:[音效名称] 格式2:[音效名称], [强度], [音量]",
+        "action": "sound: "
+    },
+    {
+        "name": "给予物品",
+        "message": "格式:[物品ID], [数量]",
+        "action": "give: "
+    },
+    {
+        "name": "给予金钱",
+        "message": "金钱数量",
+        "action": "give-money: "
+    },
+    {
+        "name": "传送到BungeeCord服务器",
+        "message": "BC服务器target",
+        "action": "server: "
+    },
+    {
+        "name": "显示BorAPI消息",
+        "message": "格式:[段数] | [信息]",
+        "action": "dragon-bar: "
+    }
+]
