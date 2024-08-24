@@ -1,0 +1,90 @@
+[
+    {
+        "label": "以玩家身份执行指令",
+        "value": {
+            "label": "指令名称",
+            "value": "",
+            "command": "输入具体的指令,不带'/'"
+        }
+    },
+    {
+        "label": "以控制台身份执行指令",
+        "value": {
+            "label": "指令名称",
+            "value": "console",
+            "command": "输入具体的指令,不带'/'"
+        }
+    },
+    {
+        "label": "以OP身份执行指令",
+        "value": {
+            "label": "指令名称",
+            "value": "op",
+            "command": "输入具体的指令,不带'/'"
+        }
+    },
+    {
+        "label": "打开另一个菜单",
+        "value": {
+            "label": "菜单名称",
+            "value": "open",
+            "command": "菜单的文件名,需要加.yml后缀"
+        }
+    },
+    {
+        "label": "向玩家发送聊天消息",
+        "value": {
+            "label": "消息内容",
+            "value": "tell",
+            "command": "输入聊天内容"
+        }
+    },
+    {
+        "label": "向所有玩家发送聊天消息",
+        "value": {
+            "label": "消息内容",
+            "value": "broadcast",
+            "command": "输入聊天内容"
+        }
+    },
+    {
+        "label": "播放指定音效",
+        "value": {
+            "label": "音效内容",
+            "value": "sound",
+            "command": "格式:音效名称,音高(数值),音量(数值)"
+        }
+    },
+    {
+        "label": "给予玩家物品",
+        "value": {
+            "label": "物品内容",
+            "value": "give",
+            "command": "格式:物品ID,数量(数值)"
+        }
+    },
+    {
+        "label": "给予玩家金钱",
+        "value": {
+            "label": "金钱数量",
+            "value": "give-money",
+            "command": "输入具体获得的金钱"
+        }
+    },
+    {
+        "label": "传送到BungeeCord服务器",
+        "value": {
+            "label": "跨服地址",
+            "value": "server",
+            "command": "输入跨服地址"
+        }
+    },
+    {
+        "label": "BOSS血消息条",
+        "value": {
+            "label": "消息内容",
+            "value": "dragon-bar",
+            "command": "格式:显示时间(数值,秒) | 消息内容"
+        }
+    }
+]
