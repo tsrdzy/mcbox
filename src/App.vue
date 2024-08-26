@@ -1,23 +1,28 @@
 <template>
   <div id="dark">
     <tsr_header></tsr_header>
-      <router-view />
+    <router-view />
   </div>
 </template>
 <script>
-
-import tsr_header from '@/components/module/tsr_header.vue'
+import tsr_header from "@/components/module/tsr_header.vue";
 export default {
   components: {
-    tsr_header
-  }
-}
+    tsr_header,
+  },
+  mounted() {
+
+  },
+  methods: {
+  },
+};
 </script>
 
 <style lang="less">
 html,
 body,
-#app,#dark {
+#app,
+#dark {
   height: 100%;
   overflow: hidden;
 }

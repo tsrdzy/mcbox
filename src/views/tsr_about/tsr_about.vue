@@ -102,6 +102,12 @@ export default {
               icon: "&#xe7ab;",
               url: "https://github.com/FoxInFlame/MinecraftColorCodes"
             },
+            {
+              name: 'CDN',
+              introduce: '原版数据包制作开源库',
+              icon: "&#xe7ab;",
+              url: "https://github.com/mdk-js/cdn"
+            },
           ]
         },
         {

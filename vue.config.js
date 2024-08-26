@@ -1,6 +1,7 @@
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
   transpileDependencies: true,
+
   pluginOptions: {
     electronBuilder: {
       builderOptions: {
@@ -8,7 +9,6 @@ module.exports = defineConfig({
         copyright: "Copyright © dzy",// 版权声明  
         productName: "MCBOX",// 产品的名称，将用于安装程序和应用程序的显示名称  
         asar: true,// 是否将应用打包为asar格式，有助于优化和隐藏源代码  
-        // asarUnpack: ["./public/MCBOX"],//不打包,排除目录
         directories: { output: 'dist' },// 自定义输出目录  
         extraResources: ["./public/MCBOX"],
         win: {
