@@ -1,0 +1,240 @@
+@color_text_main: #000000; // 黑色文字  
+@color_background: #e0f2f1; // 浅绿色背景  
+@color_text_auxiliary1: #2ecc71; // 亮绿色辅助文字  
+@color_text_auxiliary2: #27ae60; // 深绿色辅助文字  
+@color_border1: #2c3e50; // 深蓝色边框（与绿色形成对比）  
+@color_border2: #000000; // 黑色边框  
+@color_border3: rgba(46, 204, 113, 0.5); // 半透明亮绿色  
+@color_border4: rgba(0, 0, 0, 0.1); // 半透明黑色  
+@color_text_auxiliary3: #dff0d8; // 浅绿色背景色（用于特殊元素）
+
+
+#green {
+    background-color: @color_background;
+    color: @color_text_main;
+
+    .title1,
+    .title2,
+    .title0 {
+        color: @color_text_auxiliary3;
+        text-shadow: 0 0 10px @color_text_auxiliary1;
+        transition: all 0.4s;
+    }
+
+    .title0:hover {
+        text-shadow: 0 0 15px @color_text_auxiliary2;
+    }
+
+    // a标签通用属性
+    a,
+    #nav_3 {
+        color: @color_text_main;
+        transition: all 0.4s;
+    }
+
+    a:hover,
+    #nav_3:hover {
+        color: @color_text_auxiliary1;
+        transition: all 0.4s;
+    }
+
+    // 头部导航栏颜色
+    #header {
+        box-shadow: 0 0 10px @color_border2;
+
+        // logo颜色
+        .logo {
+            text-shadow: 0 0 5px @color_text_auxiliary1;
+            color: @color_text_auxiliary2;
+        }
+
+        .main_active {
+            border-bottom-color: @color_text_auxiliary2;
+        }
+
+        // 控制按钮颜色
+        .set_button {
+            div:hover {
+                background-color: @color_border1;
+            }
+
+            a:hover {
+                color: @color_text_main;
+            }
+        }
+
+    }
+
+    #about {
+        .about_author:hover {
+            color: @color_text_auxiliary1;
+            transition: all 0.2s;
+        }
+    }
+
+    #nav {
+
+        color: @color_text_main;
+
+        .title_1 {
+            color: @color_text_main;
+        }
+
+        #nav_all {
+            background-color: @color_background;
+        }
+
+        #nav_state {
+            border: 1px solid @color_border1;
+        }
+
+        #nav_version {
+            background-color: @color_text_auxiliary1;
+            color: @color_background;
+            border: 1px solid @color_border1;
+        }
+    }
+
+    #chestcommands {
+        .set_card_button {
+            div {
+                color: @color_border1;
+            }
+
+            div:hover {
+                color: @color_text_main;
+            }
+        }
+    }
+
+    .n-timeline-item-content__title,
+    .n-timeline-item-content__content {
+        color: @color_text_main
+    }
+
+    .n-timeline-item-content__meta {
+        color: @color_border1;
+    }
+
+    /* 整个滚动条 */
+    *::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    /* 滚动条上的滚动滑块 */
+    *::-webkit-scrollbar-thumb {
+        background-color: #343434;
+        border-radius: 4px;
+    }
+
+    /* 当鼠标悬停在滚动条滑块上时的样式 */
+    *::-webkit-scrollbar-thumb:hover {
+        background-color: #474747;
+    }
+
+    /* 滚动条上的两端按钮*/
+    *::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    /* 滚动条轨道 */
+    *::-webkit-scrollbar-track {
+        background-color: #00000025;
+        border-radius: 4px;
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    }
+
+    * {
+        outline: none;
+    }
+
+    input,
+    select,
+    button,
+    textarea {
+        box-shadow: 0 0 3px @color_text_auxiliary1;
+        outline: none;
+        background-color: @color_border3;
+        color: @color_text_main;
+    }
+
+    input:focus,
+    select:focus,
+    button:focus,
+    textarea:focus {
+        box-shadow: 0 0 5px @color_text_auxiliary1;
+
+    }
+
+    input:hover,
+    select:hover,
+    button:hover,
+    textarea:hover {
+        box-shadow: 0 0 7px @color_text_auxiliary1;
+    }
+
+    input:disabled,
+    textarea:disabled,
+    button:disabled,
+    select:disabled {
+        background-color: @color_border4;
+    }
+
+
+    //针对naive-ui的修改
+    .n-base-selection-label {
+        box-shadow: 0 0 3px @color_text_auxiliary1;
+        outline: none;
+        background-color: @color_border3;
+        color: #fff;
+    }
+
+
+    .n-base-selection,
+    .n-base-selection--selected {
+        --n-border-hover: #7d7d7d !important;
+        --n-border-active: #7d7d7d !important;
+        --n-border-focus: #7d7d7d !important;
+    }
+
+    .n-pagination-item {
+        color: @color_border1;
+        border-color: @color_border1;
+    }
+
+    .n-pagination-item--active {
+        color: @color_text_auxiliary1;
+        border-color: @color_text_auxiliary2;
+    }
+
+    .n-pagination-item--button {
+        color: @color_text_main;
+        border-color: @color_text_main;
+    }
+
+    .n-pagination-item--disabled {
+        color: @color_border3;
+        border-color: @color_border3;
+        background-color: @color_border1;
+    }
+
+    .n-collapse-item {
+        --n-divider-color: @color_border1;
+    }
+
+    .n-collapse-item-arrow {
+        color: @color_border1;
+    }
+
+    .n-collapse-item__content-inner {
+        padding: 0;
+    }
+
+
+}

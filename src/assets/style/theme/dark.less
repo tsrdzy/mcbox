@@ -1,51 +1,64 @@
-@color_1: #ffffff;
-@color_2: rgb(25, 25, 25);
-@color_3: #66b1ff;
-@color_4: #409EFF;
-@color_5: #909399;
-@color_6: #000;
-@color_7: #00000055;
-@color_8: #ffffff0c;
+@color_text_main: #ffffff;
+@color_background: rgb(25, 25, 25);
+@color_text_auxiliary1: #66b1ff;
+@color_text_auxiliary2: #409EFF;
+@color_border1: #909399;
+@color_border2: #000;
+@color_border3: #00000055;
+@color_border4: #ffffff0c;
+@color_text_auxiliary3: #e3edff;
 
 #dark {
-    background-color: @color_2;
-    color: @color_1;
+    background-color: @color_background;
+    color: @color_text_main;
+
+    .title1,
+    .title2,
+    .title0 {
+        color: @color_text_auxiliary3;
+        text-shadow: 0 0 10px @color_text_auxiliary1;
+        transition: all 0.4s;
+    }
+
+    .title0:hover {
+        text-shadow: 0 0 15px @color_text_auxiliary2;
+    }
 
     // a标签通用属性
     a,
     #nav_3 {
-        color: @color_1;
+        color: @color_text_main;
         transition: all 0.4s;
     }
 
     a:hover,
     #nav_3:hover {
-        color: @color_3;
+        color: @color_text_auxiliary1;
         transition: all 0.4s;
     }
 
     // 头部导航栏颜色
     #header {
-        box-shadow: 0 0 10px @color_6;
+        box-shadow: 0 0 10px @color_border2;
 
         // logo颜色
         .logo {
-            text-shadow: 0 0 5px @color_3;
-            color: @color_4;
+            text-shadow: 0 0 5px @color_text_auxiliary1;
+            color: @color_text_auxiliary2;
         }
 
         .main_active {
-            border-bottom-color: @color_4;
+            border-bottom-color: @color_text_auxiliary2;
         }
 
         // 控制按钮颜色
         .set_button {
             div:hover {
-                background-color: @color_5;
+                background-color: @color_border1;
             }
 
             a:hover {
-                color: @color_1;
+                color: @color_text_main;
             }
         }
 
@@ -53,53 +66,53 @@
 
     #about {
         .about_author:hover {
-            color: @color_3;
+            color: @color_text_auxiliary1;
             transition: all 0.2s;
         }
     }
 
     #nav {
 
-        color: @color_1;
+        color: @color_text_main;
 
         .title_1 {
-            color: @color_1;
+            color: @color_text_main;
         }
 
         #nav_all {
-            background-color: @color_2;
+            background-color: @color_background;
         }
 
         #nav_state {
-            border: 1px solid @color_5;
+            border: 1px solid @color_border1;
         }
 
         #nav_version {
-            background-color: @color_3;
-            color: @color_2;
-            border: 1px solid @color_5;
+            background-color: @color_text_auxiliary1;
+            color: @color_background;
+            border: 1px solid @color_border1;
         }
     }
 
     #chestcommands {
         .set_card_button {
             div {
-                color: @color_5;
+                color: @color_border1;
             }
 
             div:hover {
-                color: @color_1;
+                color: @color_text_main;
             }
         }
     }
 
     .n-timeline-item-content__title,
     .n-timeline-item-content__content {
-        color: @color_1
+        color: @color_text_main
     }
 
     .n-timeline-item-content__meta {
-        color: @color_5;
+        color: @color_border1;
     }
 
     /* 整个滚动条 */
@@ -144,9 +157,9 @@
     select,
     button,
     textarea {
-        box-shadow: 0 0 5px @color_3;
+        box-shadow: 0 0 5px @color_text_auxiliary1;
         outline: none;
-        background-color: @color_7;
+        background-color: @color_border3;
         color: #fff;
     }
 
@@ -154,7 +167,7 @@
     select:focus,
     button:focus,
     textarea:focus {
-        box-shadow: 0 0 10px @color_3;
+        box-shadow: 0 0 10px @color_text_auxiliary1;
 
     }
 
@@ -162,22 +175,22 @@
     select:hover,
     button:hover,
     textarea:hover {
-        box-shadow: 0 0 7px @color_3;
+        box-shadow: 0 0 7px @color_text_auxiliary1;
     }
 
     input:disabled,
     textarea:disabled,
     button:disabled,
     select:disabled {
-        background-color: @color_8;
+        background-color: @color_border4;
     }
 
 
     //针对naive-ui的修改
     .n-base-selection-label {
-        box-shadow: 0 0 3px @color_3;
+        box-shadow: 0 0 3px @color_text_auxiliary1;
         outline: none;
-        background-color: @color_7;
+        background-color: @color_border3;
         color: #fff;
     }
 
@@ -190,32 +203,32 @@
     }
 
     .n-pagination-item {
-        color: @color_5;
-        border-color: @color_5;
+        color: @color_border1;
+        border-color: @color_border1;
     }
 
     .n-pagination-item--active {
-        color: @color_3;
-        border-color: @color_4;
+        color: @color_text_auxiliary1;
+        border-color: @color_text_auxiliary2;
     }
 
     .n-pagination-item--button {
-        color: @color_1;
-        border-color: @color_1;
+        color: @color_text_main;
+        border-color: @color_text_main;
     }
 
     .n-pagination-item--disabled {
-        color: @color_7;
-        border-color: @color_7;
-        background-color: @color_5;
+        color: @color_border3;
+        border-color: @color_border3;
+        background-color: @color_border1;
     }
 
     .n-collapse-item {
-        --n-divider-color: @color_5;
+        --n-divider-color: @color_border1;
     }
 
     .n-collapse-item-arrow {
-        color: @color_5;
+        color: @color_border1;
     }
 
     .n-collapse-item__content-inner {

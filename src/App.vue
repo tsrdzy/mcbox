@@ -1,5 +1,5 @@
 <template>
-  <div id="dark">
+  <div :id="this.theme" class="all_main_main">
     <tsr_header></tsr_header>
     <router-view />
   </div>
@@ -10,10 +10,23 @@ export default {
   components: {
     tsr_header,
   },
-  mounted() {
-
+  data() {
+    return {
+      theme: "dark",
+    };
   },
-  methods: {
+  mounted() {},
+  methods: {},
+  computed: {
+    themes() {
+      return this.$store.state.theme;
+    },
+  },
+  watch: {
+    themes(newVal) {
+      console.log(1);
+      this.theme = newVal;
+    },
   },
 };
 </script>
@@ -22,7 +35,7 @@ export default {
 html,
 body,
 #app,
-#dark {
+.all_main_main {
   height: 100%;
   overflow: hidden;
 }

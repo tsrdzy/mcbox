@@ -7,9 +7,36 @@ const path = window.require('path');
 // 字体文件读取
 if (process.env.NODE_ENV === "development") {
     // 开发环境
-
+    const urls1 = path.join(
+        process.cwd(),
+        "public",
+        "MCBOX",
+        "resource",
+        "fonts"
+    );
+    addFontToDOM(
+        "opposansH",
+        urls1 + "/OPPOSans-H-2.ttf"
+    );
+    addFontToDOM(
+        "opposansR",
+        urls1 + "/OPPOSans-R-2.ttf"
+    );
+    addFontToDOM(
+        "minecraft-title",
+        urls1 + "/Minecrafter.Alt.ttf"
+    );
+    addFontToDOM(
+        "minecraft",
+        urls1 + "/Minecraft-AE.ttf"
+    );
+    addFontToDOM(
+        "sjxkjt",
+        urls1 + "/SanJiXingKaiJianTi-Cu-2.ttf"
+    );
 } else {
     // 生产环境
+    console.log(2)
     const urls = path.join(
         process.cwd(),
         "resources",
@@ -34,22 +61,26 @@ if (process.env.NODE_ENV === "development") {
         "minecraft",
         urls + "/Minecraft-AE.ttf"
     );
+    addFontToDOM(
+        "sjxkjt",
+        urls + "/SanJiXingKaiJianTi-Cu-2.ttf"
+    );
 }
 function addFontToDOM(fontFamily, fontPath) {
-    console.log(process.cwd())
-    console.log(fontPath)
     const style = document.createElement('style');
     style.type = 'text/css';
     let allcss = "@font-face{font-family:'"
         + fontFamily + "';src:url('" + fontPath + "')format('truetype');}"
     allcss = allcss.replace(/\\/g, "/")
     style.appendChild(document.createTextNode(allcss));
-    console.log(style)
     document.head.appendChild(style);
 }
-import "@/assets/fonts/basefont.css"
 import "@/assets/style/base.css"; // 基础样式表
 import "@/assets/fonts/iconfont/iconfont.css"; // icon字体文件
 import "@/assets/style/theme/dark.less"; // 主题 暗
+import "@/assets/style/theme/white.less";
+import "@/assets/style/theme/red.less";
+import "@/assets/style/theme/blue.less";
+import "@/assets/style/theme/green.less";
 
 createApp(App).use(store).use(router).mount("#app");

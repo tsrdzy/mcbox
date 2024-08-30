@@ -3,10 +3,13 @@
     <div class="card" :key="listsx" v-for="listsx in lists">
       <h2>{{ listsx.id }}:</h2>
       <hr />
-      <div style="display: flex;felx-wrap: wrap">
-        <div :key="listsxlist" v-for="listsxlist in listsx.list" class="about_author" @click="
-          openwww(listsxlist.url)
-          ">
+      <div style="display: flex; flex-wrap: wrap">
+        <div
+          :key="listsxlist"
+          v-for="listsxlist in listsx.list"
+          class="about_author"
+          @click="openwww(listsxlist.url)"
+        >
           <div class="about_author_head">
             <h2 class="iconfont logo" v-html="listsxlist.icon"></h2>
           </div>
@@ -14,7 +17,6 @@
             <h2>{{ listsxlist.name }}</h2>
             <h3>{{ listsxlist.introduce }}</h3>
           </div>
-
         </div>
       </div>
     </div>
@@ -22,15 +24,13 @@
     <br />
     <h2>赞助名单:</h2>
     <hr />
-    <div style="display: flex; felx-wrap: wrap">
+    <div style="display: flex; flex-wrap: wrap">
       <p>空空如也~</p>
     </div>
     <br />
     <h2>更新日志:</h2>
     <hr />
-    <div style="display: flex; felx-wrap: wrap">
-
-    </div>
+    <div style="display: flex; flex-wrap: wrap"></div>
     <br />
     <footer>
       <h2>Copyright © 2017-2024 mcbox. All rights reserved.</h2>
@@ -41,106 +41,111 @@
 <script>
 const { shell } = window.require("electron");
 export default {
-  components: {
-  },
+  components: {},
   data() {
     return {
       lists: [
         {
-          id: '制作者',
+          id: "制作者",
           list: [
             {
-              name: 'dzy',
-              introduce: 'MCBOX作者',
+              name: "dzy",
+              introduce: "MCBOX作者",
               icon: "&#xe887;",
-              url: "https://qm.qq.com/cgi-bin/qm/qr?k=FXkKihswoUe0DOGX5IABo42OEedbGEoQ&jump_from=webapi&authKey=ijTZkFbd1Z6xFwn9pC56lmQcC8DqdLpJLrw6wWKPVUeQmtuOsYMIAGIAaSxBHodi"
+              url: "https://qm.qq.com/cgi-bin/qm/qr?k=FXkKihswoUe0DOGX5IABo42OEedbGEoQ&jump_from=webapi&authKey=ijTZkFbd1Z6xFwn9pC56lmQcC8DqdLpJLrw6wWKPVUeQmtuOsYMIAGIAaSxBHodi",
             },
             {
-              name: 'QQ交流群',
-              introduce: 'MineCraft交流群',
+              name: "QQ交流群",
+              introduce: "MineCraft交流群",
               icon: "&#xe887;",
-              url: "https://qm.qq.com/cgi-bin/qm/qr?k=FXkKihswoUe0DOGX5IABo42OEedbGEoQ&jump_from=webapi&authKey=ijTZkFbd1Z6xFwn9pC56lmQcC8DqdLpJLrw6wWKPVUeQmtuOsYMIAGIAaSxBHodi"
+              url: "https://qm.qq.com/cgi-bin/qm/qr?k=FXkKihswoUe0DOGX5IABo42OEedbGEoQ&jump_from=webapi&authKey=ijTZkFbd1Z6xFwn9pC56lmQcC8DqdLpJLrw6wWKPVUeQmtuOsYMIAGIAaSxBHodi",
             },
-          ]
+          ],
         },
         {
-          id: '鸣谢',
+          id: "鸣谢",
           list: [
             {
-              name: 'Blockbench',
-              introduce: 'MineCraft建模软件',
+              name: "Blockbench",
+              introduce: "MineCraft建模软件",
               icon: "&#xe605;",
-              url: "https://www.blockbench.net/"
+              url: "https://www.blockbench.net/",
             },
             {
-              name: 'Blender',
-              introduce: '建模软件',
+              name: "Blender",
+              introduce: "建模软件",
               icon: "&#xeb50;",
-              url: "https://www.blender.org/"
+              url: "https://www.blender.org/",
             },
             {
-              name: '原版模组入门教程',
-              introduce: '作者:ruhuasiyu',
+              name: "原版模组入门教程",
+              introduce: "作者:ruhuasiyu",
               icon: "&#xe62a;",
-              url: "https://zhangshenxing.github.io/VanillaModTutorial/"
+              url: "https://zhangshenxing.github.io/VanillaModTutorial/",
             },
             {
-              name: 'MC百科',
-              introduce: 'MC资源站',
+              name: "MC百科",
+              introduce: "MC资源站",
               icon: "&#xe62a;",
-              url: "https://www.mcmod.cn/"
+              url: "https://www.mcmod.cn/",
             },
             {
-              name: 'skinview3d',
-              introduce: '3D皮肤展示开源库',
+              name: "skinview3d",
+              introduce: "3D皮肤展示开源库",
               icon: "&#xe7ab;",
-              url: "https://github.com/bs-community/skinview3d?tab=readme-ov-file"
+              url: "https://github.com/bs-community/skinview3d?tab=readme-ov-file",
             },
             {
-              name: 'MinecraftColorCodes',
-              introduce: 'MC字体颜色转换开源库',
+              name: "MinecraftColorCodes",
+              introduce: "MC字体颜色转换开源库",
               icon: "&#xe7ab;",
-              url: "https://github.com/FoxInFlame/MinecraftColorCodes"
+              url: "https://github.com/FoxInFlame/MinecraftColorCodes",
             },
             {
-              name: 'CDN',
-              introduce: '原版数据包制作开源库',
+              name: "CDN",
+              introduce: "原版数据包制作开源库",
               icon: "&#xe7ab;",
-              url: "https://github.com/mdk-js/cdn"
+              url: "https://github.com/mdk-js/cdn",
             },
-          ]
+          ],
         },
         {
-          id: '相关链接',
+          id: "相关链接",
           list: [
             {
-              name: '建议&反馈',
-              introduce: '邮箱',
+              name: "邮箱",
+              introduce: "建议&反馈",
               icon: "&#xe608;",
-              url: "mailto:420792287@qq.com"
+              url: "mailto:420792287@qq.com",
             },
             {
-              name: 'MCBOX WIKI',
-              introduce: '不会用?点我!',
+              name: "Issues",
+              introduce: "建议&反馈",
               icon: "&#xe7ab;",
-              url: ""
+              url: "https://github.com/tsrdzy/mcbox/issues",
             },
             {
-              name: 'github开源地址',
-              introduce: '开源',
+              name: "MCBOX WIKI",
+              introduce: "不会用?点我!",
               icon: "&#xe7ab;",
-              url: ""
+              url: "https://github.com/tsrdzy/mcbox/wiki",
             },
             {
-              name: 'gitee开源地址',
-              introduce: '开源',
+              name: "github开源地址",
+              introduce: "开源",
+              icon: "&#xe7ab;",
+              url: "https://github.com/tsrdzy/mcbox",
+            },
+            {
+              name: "gitee开源地址",
+              introduce: "未开放",
               icon: "&#xe686;",
-              url: ""
+              url: "https://github.com/tsrdzy/mcbox",
             },
-          ]
+          ],
         },
-      ]
-    }
+      ],
+    };
   },
   methods: {
     openwww(url) {

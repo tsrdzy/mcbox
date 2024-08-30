@@ -159,14 +159,17 @@ export default {
       const sidebarElement = this.$refs.sidebar;
       const headers = document.getElementById("header");
       // 确保 sidebarElement 存在，并且点击事件的目标不是 sidebarElement 本身或其子元素
+      console.log(event.target.id)
       if (
         headers &&
         sidebarElement &&
         !sidebarElement.contains(event.target) &&
         event.target.id !== "header"
       ) {
-        // 如果不是，则隐藏侧边栏
-        this.nav_button_show = false;
+
+          // 如果不是，则隐藏侧边栏
+          this.nav_button_show = false;
+        
       }
     },
     preventSidebarHide(event) {
