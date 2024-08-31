@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -13,10 +13,13 @@
   },
   "main": "background.js",
   "dependencies": {
+    "@highlightjs/vue-plugin": "^2.1.0",
     "axios": "^1.7.4",
     "core-js": "^3.8.3",
     "file-saver": "^2.0.5",
+    "highlight.js": "^11.10.0",
     "html2canvas": "^1.4.1",
+    "js-yaml": "^4.1.0",
     "less": "^4.2.0",
     "less-loader": "^12.2.0",
     "naive-ui": "^2.39.0",

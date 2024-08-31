@@ -1,4 +1,5 @@
 @color_text_main: #ffffff;
+@color_text_main2: #ffffff25;
 @color_background: rgb(25, 25, 25);
 @color_text_auxiliary1: #66b1ff;
 @color_text_auxiliary2: #409EFF;
@@ -104,6 +105,53 @@
                 color: @color_text_main;
             }
         }
+    }
+
+    #mythicmobs {
+
+        main {
+            .list_title {
+                color: @color_text_main;
+            }
+
+            .cards {
+                .card {
+                    .card_title {
+                        color: @color_text_main;
+                    }
+
+                    .hint {
+                        color: @color_text_main;
+                    }
+
+                    .hint:hover {
+                        color: @color_text_main2;
+                    }
+                }
+
+                .card_table {
+                    table {
+                        border: 1px solid @color_text_main;
+                        color: @color_text_main;
+                    }
+
+                    tr,
+                    th,
+                    td {
+                        border: 1px solid @color_text_main;
+                    }
+
+                    button {
+                        background-color: @color_text_main;
+                    }
+
+                    button:hover {
+                        background-color: rgb(233, 127, 127);
+                    }
+                }
+            }
+        }
+
     }
 
     .n-timeline-item-content__title,

@@ -1,0 +1,427 @@
+[
+    {
+        "value": "ALLAY",
+        "label": "悦灵",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/60/603100.png?v=11"
+    },
+    {
+        "value": "ARMOR_STAND",
+        "label": "盔甲架",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/28/282459.png?v=4"
+    },
+    {
+        "value": "AXOLOTL",
+        "label": "美西螈",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/46/465144.png?v=14"
+    },
+    {
+        "value": "BABY_DROWNED",
+        "label": "幼年溺尸",
+        "imgurl": "https://patchwiki.biligame.com/images/mc/thumb/9/90/a2gp7xzd8c3m4e01zzqcf8kg27oy9k9.png/76px-Baby_Drowned.png"
+    },
+    {
+        "value": "BABY_ZOGLIN",
+        "label": "幼年僵尸疣猪兽",
+        "imgurl": "https://patchwiki.biligame.com/images/mc/thumb/5/5d/0ng5hhhmr8tkgbmp3t4dg4tzmx0wjpi.png/100px-Baby_Hoglin.png"
+    },
+    {
+        "value": "BABY_ZOMBIE",
+        "label": "幼年僵尸",
+        "imgurl": "https://patchwiki.biligame.com/images/mc/thumb/4/44/j8vaexj28j1gsve0t80cdk0vdt4d30f.png/75px-Baby_Zombie.png"
+    },
+    {
+        "value": "BABY_ZOMBIE_VILLAGER",
+        "label": "幼年僵尸村民",
+        "imgurl": "https://patchwiki.biligame.com/images/mc/thumb/8/88/aimo7wmt5l6pnj36h2lh97ryiubz44u.png/110px-Savanna_Baby_Zombie_Villager.png"
+    },
+    {
+        "value": "BAT",
+        "label": "蝙蝠",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/188032.png?v=6"
+    },
+    {
+        "value": "BEE",
+        "label": "蜜蜂",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/20/206377.png?v=11"
+    },
+    {
+        "value": "BLAZE",
+        "label": "烈焰人",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/4/46728.png?v=16"
+    },
+    {
+        "value": "CAT",
+        "label": "猫",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/188033.png?v=9"
+    },
+    {
+        "value": "CAVE_SPIDER",
+        "label": "洞穴蜘蛛",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/61986.png?v=8"
+    },
+    {
+        "value": "CHICKEN",
+        "label": "鸡",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/62550.png?v=11"
+    },
+    {
+        "value": "COD",
+        "label": "鳕鱼",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/188031.png?v=12"
+    },
+    {
+        "value": "COW",
+        "label": "牛",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/4/43205.png?v=15"
+    },
+    {
+        "value": "CREEPER",
+        "label": "苦力怕",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/1/11373.png?v=18"
+    },
+    {
+        "value": "DOLPHIN",
+        "label": "海豚",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/15/156597.png?v=5"
+    },
+    {
+        "value": "DONKEY",
+        "label": "驴",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/188676.png?v=7"
+    },
+    {
+        "value": "DROWNED",
+        "label": "溺尸",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/10/102991.png?v=17"
+    },
+    {
+        "value": "ELDER_GUARDIAN",
+        "label": "远古守卫者",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/61990.png?v=11"
+    },
+    {
+        "value": "ENDERMAN",
+        "label": "末影人",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/2/29640.png?v=21"
+    },
+    {
+        "value": "ENDERMITE",
+        "label": "末影螨",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/64772.png?v=13"
+    },
+    {
+        "value": "ENDER_CRYSTAL",
+        "label": "末影水晶",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/28/282463.png?v=6"
+    },
+    {
+        "value": "ENDER_DRAGON",
+        "label": "末影龙",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/3/36350.png?v=23"
+    },
+    {
+        "value": "EVOKER",
+        "label": "唤魔者",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/64674.png?v=19"
+    },
+    {
+        "value": "EXPERIENCE_ORB",
+        "label": "经验球",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/28/282465.png?v=4"
+    },
+    {
+        "value": "FROG",
+        "label": "青蛙",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/60/603098.png?v=13"
+    },
+    {
+        "value": "GHAST",
+        "label": "恶魂",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/4/46744.png?v=25"
+    },
+    {
+        "value": "GIANT",
+        "label": "巨人",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/62548.png?v=10"
+    },
+    {
+        "value": "GLOW_SQUID",
+        "label": "发光鱿鱼",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/46/462955.png?v=13"
+    },
+    {
+        "value": "GOAT",
+        "label": "山羊",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/46/465145.png?v=12"
+    },
+    {
+        "value": "GUARDIAN",
+        "label": "守卫者",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/61989.png?v=10"
+    },
+    {
+        "value": "HOGLIN",
+        "label": "疣猪兽",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/21/210671.png?v=21"
+    },
+    {
+        "value": "HORSE",
+        "label": "马",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/188334.png?v=14"
+    },
+    {
+        "value": "HUSK",
+        "label": "尸壳",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/65961.png?v=17"
+    },
+    {
+        "value": "ILLUSIONER",
+        "label": "幻术师",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/64675.png?v=4"
+    },
+    {
+        "value": "IRON_GOLEM",
+        "label": "铁傀儡",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/65598.png?v=32"
+    },
+    {
+        "value": "LLAMA",
+        "label": "羊驼",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/189049.png?v=7"
+    },
+    {
+        "value": "MAGMA_CUBE",
+        "label": "岩浆怪",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/62549.png?v=9"
+    },
+    {
+        "value": "MULE",
+        "label": "骡",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/188677.png?v=7"
+    },
+    {
+        "value": "MUSHROOM_COW",
+        "label": "哞菇",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/4/43209.png?v=12"
+    },
+    {
+        "value": "OCELOT",
+        "label": "豹猫",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/4/47513.png?v=8"
+    },
+    {
+        "value": "PARROT",
+        "label": "鹦鹉",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/5/58521.png?v=15"
+    },
+    {
+        "value": "PHANTOM",
+        "label": "幻翼",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/7/72661.png?v=18"
+    },
+    {
+        "value": "PIG",
+        "label": "猪",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/7/78535.png?v=11"
+    },
+    {
+        "value": "PIGLIN",
+        "label": "猪灵",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/21/210372.png?v=25"
+    },
+    {
+        "value": "PILLAGER",
+        "label": "掠夺者",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/186649.png?v=13"
+    },
+    {
+        "value": "POLAR_BEAR",
+        "label": "北极熊",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/12/128757.png?v=7"
+    },
+    {
+        "value": "PUFFERFISH",
+        "label": "河豚",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/15/156582.png?v=8"
+    },
+    {
+        "value": "RABBIT",
+        "label": "兔",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/3/36578.png?v=8"
+    },
+    {
+        "value": "RAVAGER",
+        "label": "劫掠兽",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/188036.png?v=10"
+    },
+    {
+        "value": "SALMON",
+        "label": "鲑鱼",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/15/156571.png?v=6"
+    },
+    {
+        "value": "SHEEP",
+        "label": "羊",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/4/46948.png?v=20"
+    },
+    {
+        "value": "SHULKER",
+        "label": "潜影贝",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/64694.png?v=16"
+    },
+    {
+        "value": "SILVERFISH",
+        "label": "蠹虫",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/16/160808.png?v=9"
+    },
+    {
+        "value": "SKELETON",
+        "label": "骷髅",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/4/46365.png?v=21"
+    },
+    {
+        "value": "SKELETON_HORSE",
+        "label": "骷髅马",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/188038.png?v=7"
+    },
+    {
+        "value": "SLIME",
+        "label": "史莱姆",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/4/46733.png?v=15"
+    },
+    {
+        "value": "SNOWMAN",
+        "label": "雪傀儡",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/65960.png?v=23"
+    },
+    {
+        "value": "SPIDER",
+        "label": "蜘蛛",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/4/46776.png?v=14"
+    },
+    {
+        "value": "SQUID",
+        "label": "鱿鱼",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/188031.png?v=12"
+    },
+    {
+        "value": "STRAY",
+        "label": "流浪者",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/68863.png?v=11"
+    },
+    {
+        "value": "STRIDER",
+        "label": "炽足兽",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/22/224454.png?v=7"
+    },
+    {
+        "value": "TADPOLE",
+        "label": "蝌蚪",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/60/603099.png?v=9"
+    },
+    {
+        "value": "TNT",
+        "label": "炸药",
+        "imgurl": "https://i.mcmod.cn/item/icon/32x32/18/189129.png?v=6"
+    },
+    {
+        "value": "TRADER_LLAMA",
+        "label": "行商羊驼",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/28/282483.png?v=4"
+    },
+    {
+        "value": "TROPICAL_FISH",
+        "label": "热带鱼",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/15/156580.png?v=10"
+    },
+    {
+        "value": "TURTLE",
+        "label": "海龟",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/15/156583.png?v=10"
+    },
+    {
+        "value": "VEX",
+        "label": "恼鬼",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/64692.png?v=10"
+    },
+    {
+        "value": "VILLAGER",
+        "label": "村民",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/1/11371.png?v=33"
+    },
+    {
+        "value": "VINDICATOR",
+        "label": "卫道士",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/64676.png?v=13"
+    },
+    {
+        "value": "WANDERING_TRADER",
+        "label": "流浪商人",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/188034.png?v=13"
+    },
+    {
+        "value": "WARDEN",
+        "label": "监守者",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/60/603101.png?v=18"
+    },
+    {
+        "value": "WITCH",
+        "label": "女巫",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/4/46742.png?v=24"
+    },
+    {
+        "value": "WITHER",
+        "label": "凋灵",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/4/43896.png?v=28"
+    },
+    {
+        "value": "WITHER_SKELETON",
+        "label": "凋零骷髅",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/4/46731.png?v=16"
+    },
+    {
+        "value": "WOLF",
+        "label": "狼",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/6/65597.png?v=23"
+    },
+    {
+        "value": "ZOMBIE",
+        "label": "僵尸",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/3/30791.png?v=24"
+    },
+    {
+        "value": "ZOMBIE_HORSE",
+        "label": "僵尸马",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/189052.png?v=8"
+    },
+    {
+        "value": "ZOMBIE_VILLAGER",
+        "label": "僵尸村民",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/18/188037.png?v=14"
+    },
+    {
+        "value": "ZOMBIFIED_PIGLIN",
+        "label": "僵尸猪灵",
+        "imgurl": "https://i.mcmod.cn/item/icon/128x128/16/160807.png?v=21"
+    },
+    {
+        "value": "PIG_ZOMBIE",
+        "label": "僵尸猪人",
+        "imgurl": ""
+    },
+    {
+        "value": "BABY_PIG_ZOMBIE",
+        "label": "幼年僵尸猪人",
+        "imgurl": ""
+    },
+    {
+        "value": "BABY_PIG_ZOMBIE_VILLAGER",
+        "label": "幼年僵尸猪人村民",
+        "imgurl": ""
+    },
+    {
+        "value": "MARKER",
+        "label": "低耗能实体",
+        "imgurl": ""
+    }
+]

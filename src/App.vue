@@ -36,6 +36,7 @@ html,
 body,
 #app,
 .all_main_main {
+  transition: all 0.4s;
   height: 100%;
   overflow: hidden;
 }

@@ -4,6 +4,11 @@ import router from "./router";
 import store from "./store";
 const path = window.require('path');
 
+import hljs from "highlight.js/lib/core";
+import highlightPlugin from "@highlightjs/vue-plugin";
+import yaml from "highlight.js/lib/languages/yaml";
+hljs.registerLanguage("yaml", yaml);
+
 // 字体文件读取
 if (process.env.NODE_ENV === "development") {
     // 开发环境
@@ -83,4 +88,4 @@ import "@/assets/style/theme/red.less";
 import "@/assets/style/theme/blue.less";
 import "@/assets/style/theme/green.less";
 
-createApp(App).use(store).use(router).mount("#app");
+createApp(App).use(store).use(router).use(highlightPlugin).mount("#app");

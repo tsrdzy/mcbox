@@ -107,6 +107,12 @@ export default {
               icon: "&#xe7ab;",
               url: "https://github.com/mdk-js/cdn",
             },
+            {
+              name: "Naive-ui",
+              introduce: "VUE组件库",
+              icon: "&#xe60d;",
+              url: "https://www.naiveui.com/zh-CN/os-theme",
+            },
           ],
         },
         {
@@ -125,10 +131,10 @@ export default {
               url: "https://github.com/tsrdzy/mcbox/issues",
             },
             {
-              name: "MCBOX WIKI",
-              introduce: "不会用?点我!",
+              name: "MCBOX 更新日志",
+              introduce: "了解MCBOX最新动态",
               icon: "&#xe7ab;",
-              url: "https://github.com/tsrdzy/mcbox/wiki",
+              url: "https://www.yuque.com/u37040040/efltmi/lzz4eah2hgggdl5h?singleDoc# 《更新日志》",
             },
             {
               name: "github开源地址",

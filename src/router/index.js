@@ -36,6 +36,36 @@ const routes = [
         path: "/function/mythicmobs",
         component: () =>
           import("../views/tsr_function/mythicmobs/tsr_mythicmobs.vue"),
+        children: [
+          {
+            path: "/function/mythicmobs/mobs",
+            component: () => import("../views/tsr_function/mythicmobs/mobs/yn_mobs.vue"),
+          },
+          {
+            path: "/function/mythicmobs/items",
+            component: () => import("../views/tsr_function/mythicmobs/items/yn_items.vue"),
+          },
+          {
+            path: "/function/mythicmobs/skill",
+            component: () => import("../views/tsr_function/mythicmobs/skills/yn_skill.vue"),
+          },
+          {
+            path: "/function/mythicmobs/skills",
+            component: () => import("../views/tsr_function/mythicmobs/skills/yn_skills.vue"),
+          },
+          {
+            path: "/function/mythicmobs/droptables",
+            component: () => import("../views/tsr_function/mythicmobs/droptables/yn_droptables.vue"),
+          },
+          {
+            path: "/function/mythicmobs/spawners",
+            component: () => import("../views/tsr_function/mythicmobs/spawners/yn_spawners.vue"),
+          },
+          {
+            path: "/function/mythicmobs/randomspawns",
+            component: () => import("../views/tsr_function/mythicmobs/spawners/yn_randomspawns.vue"),
+          },
+        ]
       },
       {
         path: "/function/keyboardtestutility",
@@ -64,6 +94,9 @@ const routes = [
       {
         path: "/resource/models",
         component: () => import("../views/tsr_resource/models/tsr_model.vue"),
+      }, {
+        path: "/resource/servercore",
+        component: () => import("../views/tsr_resource/servercore/tsr_servercore.vue"),
       },
     ],
   },

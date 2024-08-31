@@ -3,7 +3,7 @@
     <div class="header_left">
       <div class="logo">
         <h2 class="iconfont">&#xe7fb;</h2>
-        <h1>TsrCraft MCBOX V1.0.0</h1>
+        <h1>TsrCraft MCBOX V{{ this.mcbox_varsion }}</h1>
       </div>
       <ul class="nav iconfont">
         <li>
@@ -44,9 +44,18 @@
           <ul v-if="this.header_skin_select" class="skin_select">
             <li v-on:click="theme('white')" style="background-color: #fff"></li>
             <li v-on:click="theme('dark')" style="background-color: #000"></li>
-            <li v-on:click="theme('red')" style="background-color: #33001b"></li>
-            <li v-on:click="theme('blue')" style="background-color: #2c3e50"></li>
-            <li v-on:click="theme('green')" style="background-color: #2ecc71"></li>
+            <li
+              v-on:click="theme('red')"
+              style="background-color: #33001b"
+            ></li>
+            <li
+              v-on:click="theme('blue')"
+              style="background-color: #2c3e50"
+            ></li>
+            <li
+              v-on:click="theme('green')"
+              style="background-color: #2ecc71"
+            ></li>
           </ul>
         </transition>
       </div>
@@ -67,6 +76,7 @@
 </template>
     
 <script>
+import config from "@/../package.json";
 const { ipcRenderer } = window.require("electron");
 export default {
   data() {
@@ -74,9 +84,11 @@ export default {
       main_max: false,
       ids: "window",
       header_skin_select: false,
+      mcbox_varsion: "",
     };
   },
   mounted() {
+    this.mcbox_varsion = config.version;
     ipcRenderer.on(this.ids + "-max", () => {
       this.main_max = true;
     });
@@ -195,7 +207,7 @@ header {
         height: 28px;
         display: flex;
         background-color: #7f7f7f77;
-        transition: opacity 1s ease;
+        transition: opacity 0.2s ease;
 
         li {
           max-width: 20px;

@@ -159,22 +159,22 @@ export default {
       const sidebarElement = this.$refs.sidebar;
       const headers = document.getElementById("header");
       // 确保 sidebarElement 存在，并且点击事件的目标不是 sidebarElement 本身或其子元素
-      console.log(event.target.id)
       if (
         headers &&
         sidebarElement &&
         !sidebarElement.contains(event.target) &&
-        event.target.id !== "header"
+        event.target.id !== "header" &&
+        event.target.id !== "home"
       ) {
-
-          // 如果不是，则隐藏侧边栏
+        // 如果不是，则隐藏侧边栏
+        if (this.$route.fullPath == "/function" && event.target.id == "") {
+          this.nav_button_show = true;
+        } else {
           this.nav_button_show = false;
-        
+        }
       }
     },
     preventSidebarHide(event) {
-      // 这里你可以做更多的事情，但在这个示例中，我们什么也不做，只是不调用handleClickOutside
-      // 因为#header的点击事件已经在这里被“拦截”了
       event.stopPropagation(); // 虽然在这个上下文中可能不是必需的，但展示了如何阻止事件冒泡
     },
   },
@@ -217,9 +217,6 @@ export default {
       }
 
       .nav_2 {
-        // display: flex;
-        // justify-content: center;
-        // flex-wrap: wrap;
         margin: 10px auto;
         width: calc(100% - 30px);
         font-size: 11px;

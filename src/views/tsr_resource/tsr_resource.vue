@@ -24,7 +24,7 @@ export default {
                 {
                     name: "网络资源",
                     com: [
-                        ['服务端核心', '', 0, 'MCALL'],
+                        ['服务端核心', '/resource/servercore', 0, 'MCALL'],
                         ['客户端核心', '', 0, 'MCALL'],
                         ['模组搜索', '', 0, 'MCALL'],
                         ['插件搜索', '', 0, 'MCALL'],
